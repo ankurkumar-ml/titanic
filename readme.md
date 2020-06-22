@@ -38,4 +38,5 @@ The traning data contains the following columns:
  
  ## Methodology
  
- 
+ In this project, 
+ -I did exploratory data analysis to gain understanding about the different variables in the given dataset. 
