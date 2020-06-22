@@ -38,5 +38,25 @@ The traning data contains the following columns:
  
  ## Methodology
  
- In this project, 
- -I did exploratory data analysis to gain understanding about the different variables in the given dataset. 
+ In this project First I did exploratory data analysis to gain understanding about the different variables in the given dataset. 
+ ### Findings from Exploratory Data Analysis
+    - There are more number of males than the females in the training set.
+    - More Passengers died and less survived.
+    - More females survived and less males survived.
+    - Passengers from the 1st class survived more.
+  
+ In Feature PreProcessing, I handled the missing values by replacing with mean and most frequent value. To handle the categorical data I did one hot encoding.
+ 
+ After cleaning the data and making it ready for the machine learning algorithm, I trained various models and evaluated them using the k-fold cross validation. Since some of the models were giving the nearly same cross_val_score, i have also calculated auc to select the best model for making predictions on the test set.
+ The models which I have trained are the following:
+ - Logistic Regression
+ - Decision Tree Classifier
+ - Support Vector Classifier
+ - KNeighbors Classifier
+ - Random Forest Classifier
+ - Voting Classifier
+ - Bagging Classifier
+ - AdaBoost Classifier
+ - GradientBoosting Classifier
+ 
+ After training and evaluating these models, I selected the Voting Classifier as the final model and made the predictions on the test set using this Classifier.
